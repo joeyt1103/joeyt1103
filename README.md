@@ -71,11 +71,6 @@ Several coding agents run against that vault in parallel.
 
 <div align="center">
 
-<img height="170em" src="https://github-readme-stats.vercel.app/api?username=joeyt1103&show_icons=true&include_all_commits=true&count_private=true&bg_color=FFFFFF&title_color=3A72C4&text_color=3C3C43&icon_color=4A87D8&border_color=C6CBD1&border_radius=9" alt="GitHub stats" />
-<img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=joeyt1103&layout=compact&langs_count=8&bg_color=FFFFFF&title_color=3A72C4&text_color=3C3C43&border_color=C6CBD1&border_radius=9" alt="Top languages" />
-
-<br /><br />
-
 <img src="https://streak-stats.demolab.com?user=joeyt1103&background=FFFFFF&border=C6CBD1&border_radius=9&stroke=C6CBD1&ring=4A87D8&fire=FF5F57&currStreakNum=1D1D1F&sideNums=3C3C43&currStreakLabel=3A72C4&sideLabels=6E7781&dates=8B949E" alt="Streak" />
 
 <br /><br />
