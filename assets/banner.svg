@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" width="1000" height="320" role="img" aria-label="Joe Trave IV, full-stack, apple, automation">
+  <defs>
+    <!-- Aqua title bar: light brushed gradient, darker at the seam -->
+    <linearGradient id="titlebar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#FDFDFD"/>
+      <stop offset="55%"  stop-color="#E8E8E8"/>
+      <stop offset="100%" stop-color="#D2D2D2"/>
+    </linearGradient>
+
+    <!-- Default (blue) Aqua button. The hard stop at 50% is what made these look wet -->
+    <linearGradient id="aqua" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#EAF4FE"/>
+      <stop offset="45%"  stop-color="#A9CDF2"/>
+      <stop offset="50%"  stop-color="#74A9E4"/>
+      <stop offset="100%" stop-color="#4A87D8"/>
+    </linearGradient>
+    <linearGradient id="aquaLit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#FFFFFF"/>
+      <stop offset="45%"  stop-color="#D6E9FC"/>
+      <stop offset="50%"  stop-color="#A6CCF3"/>
+      <stop offset="100%" stop-color="#7FAEE7"/>
+    </linearGradient>
+
+    <!-- Plain Aqua button -->
+    <linearGradient id="plain" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#FFFFFF"/>
+      <stop offset="45%"  stop-color="#F4F4F4"/>
+      <stop offset="50%"  stop-color="#E2E2E2"/>
+      <stop offset="100%" stop-color="#F8F8F8"/>
+    </linearGradient>
+
+    <!-- Traffic lights -->
+    <radialGradient id="tlRed" cx="35%" cy="28%" r="80%">
+      <stop offset="0%" stop-color="#FF9C94"/><stop offset="55%" stop-color="#FF5F57"/><stop offset="100%" stop-color="#D8372F"/>
+    </radialGradient>
+    <radialGradient id="tlYellow" cx="35%" cy="28%" r="80%">
+      <stop offset="0%" stop-color="#FFE08A"/><stop offset="55%" stop-color="#FFBD2E"/><stop offset="100%" stop-color="#D89A16"/>
+    </radialGradient>
+    <radialGradient id="tlGreen" cx="35%" cy="28%" r="80%">
+      <stop offset="0%" stop-color="#8FEF9B"/><stop offset="55%" stop-color="#28C93F"/><stop offset="100%" stop-color="#12A32A"/>
+    </radialGradient>
+
+    <!-- Glass highlight sitting on the top half of a button -->
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.05"/>
+    </linearGradient>
+
+    <!-- The pinstripes. This is the detail everyone remembers and nobody reproduces -->
+    <pattern id="stripes" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="#FFFFFF"/>
+      <rect width="4" height="1" fill="#EDF1F7"/>
+    </pattern>
+    <pattern id="barStripes" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#FFFFFF" opacity="0.55"/>
+    </pattern>
+
+    <filter id="drop" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="7" stdDeviation="11" flood-color="#000000" flood-opacity="0.30"/>
+    </filter>
+
+    <clipPath id="window">
+      <rect x="24" y="16" width="952" height="286" rx="9"/>
+    </clipPath>
+  </defs>
+
+  <!-- Starts fully visible on purpose. Driving opacity from an animation would blank the whole
+       banner anywhere SMIL is ignored (reduced motion, some proxies, most SVG-to-raster tools). -->
+  <g filter="url(#drop)">
+    <g clip-path="url(#window)">
+      <!-- body -->
+      <rect x="24" y="16" width="952" height="286" fill="url(#stripes)"/>
+
+      <!-- title bar -->
+      <rect x="24" y="16" width="952" height="42" fill="url(#titlebar)"/>
+      <rect x="24" y="16" width="952" height="42" fill="url(#barStripes)"/>
+      <line x1="24" y1="57.5" x2="976" y2="57.5" stroke="#A9A9A9" stroke-width="1"/>
+
+      <!-- traffic lights -->
+      <g>
+        <circle cx="48" cy="37" r="6.5" fill="url(#tlRed)"    stroke="#B7332C" stroke-width="0.6"/>
+        <circle cx="70" cy="37" r="6.5" fill="url(#tlYellow)" stroke="#BE8712" stroke-width="0.6"/>
+        <circle cx="92" cy="37" r="6.5" fill="url(#tlGreen)"  stroke="#0E8A22" stroke-width="0.6"/>
+        <ellipse cx="48" cy="34.2" rx="3.6" ry="2.2" fill="#FFFFFF" opacity="0.55"/>
+        <ellipse cx="70" cy="34.2" rx="3.6" ry="2.2" fill="#FFFFFF" opacity="0.55"/>
+        <ellipse cx="92" cy="34.2" rx="3.6" ry="2.2" fill="#FFFFFF" opacity="0.55"/>
+      </g>
+
+      <text x="500" y="42" text-anchor="middle"
+            font-family="'Lucida Grande','Helvetica Neue',Helvetica,Arial,sans-serif"
+            font-size="13.5" font-weight="700" fill="#4A4A4A">joeyt1103</text>
+
+      <!-- content -->
+      <text x="500" y="152" text-anchor="middle"
+            font-family="'Lucida Grande','Helvetica Neue',Helvetica,Arial,sans-serif"
+            font-size="46" font-weight="500" letter-spacing="7" fill="#1D1D1F">JOE TRAVE IV</text>
+
+      <text x="500" y="188" text-anchor="middle"
+            font-family="'Lucida Grande','Helvetica Neue',Helvetica,Arial,sans-serif"
+            font-size="15" letter-spacing="4.5" fill="#6E7781">full-stack &#183; apple &#183; automation</text>
+
+      <!-- buttons -->
+      <g>
+        <!-- default button, pulsing the way Aqua's did -->
+        <rect x="326" y="228" width="116" height="32" rx="16" fill="url(#aqua)" stroke="#3A6FBF" stroke-width="0.8"/>
+        <rect x="326" y="228" width="116" height="32" rx="16" fill="url(#aquaLit)" opacity="0">
+          <animate attributeName="opacity" values="0;0.9;0" dur="2.2s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="330" y="231" width="108" height="13" rx="6.5" fill="url(#gloss)"/>
+        <text x="384" y="249" text-anchor="middle"
+              font-family="'Lucida Grande','Helvetica Neue',Helvetica,Arial,sans-serif"
+              font-size="13.5" font-weight="700" fill="#FFFFFF">Projects</text>
+
+        <rect x="456" y="228" width="96" height="32" rx="16" fill="url(#plain)" stroke="#AEB4BC" stroke-width="0.8"/>
+        <rect x="460" y="231" width="88" height="13" rx="6.5" fill="url(#gloss)"/>
+        <text x="504" y="249" text-anchor="middle"
+              font-family="'Lucida Grande','Helvetica Neue',Helvetica,Arial,sans-serif"
+              font-size="13.5" fill="#3C3C43">Stack</text>
+
+        <rect x="566" y="228" width="108" height="32" rx="16" fill="url(#plain)" stroke="#AEB4BC" stroke-width="0.8"/>
+        <rect x="570" y="231" width="100" height="13" rx="6.5" fill="url(#gloss)"/>
+        <text x="620" y="249" text-anchor="middle"
+              font-family="'Lucida Grande','Helvetica Neue',Helvetica,Arial,sans-serif"
+              font-size="13.5" fill="#3C3C43">Contact</text>
+      </g>
+    </g>
+
+    <rect x="24" y="16" width="952" height="286" rx="9" fill="none" stroke="#8E8E8E" stroke-width="1"/>
+  </g>
+</svg>
