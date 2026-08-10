@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/banner.svg" width="100%" alt="Joe Trave IV" />
+<img src="https://raw.githubusercontent.com/joeyt1103/joeyt1103/main/assets/banner.svg" width="100%" alt="Joe Trave IV" />
 
 </div>
 
